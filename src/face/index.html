@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Simple Sidebar - Start Bootstrap Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+        <div class="sidebar-heading">Books </div>
+        <div class="list-group list-group-flush" id="books">
+<!--            <a href="#" class="list-group-item list-group-item-action bg-light">Shortcuts</a>-->
+<!--            <a href="#" class="list-group-item list-group-item-action bg-light">Overview</a>-->
+<!--            <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>-->
+<!--            <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>-->
+<!--            <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>-->
+        </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+<!--            <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>-->
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <div class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" id="book_link" type="search" placeholder="link" aria-label="Add book by link">
+                        <button class="btn btn-outline-success my-2 my-sm-0" onclick="addBook()">Add</button>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container-fluid" id="book-content" style="position:absolute; height: 100%; width: 100%">
+            <h1 class="mt-4">Add book on the top and read by clicking on the left</h1>
+        </div>
+    </div>
+
+</div>
+
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../utils/channels.js"></script>
+<script src="custom.js"></script>
+
+<script src="vendor/jszip.min.js"></script>
+<script src="vendor/epub.min.js"></script>
+
+</body>
+
+</html>
